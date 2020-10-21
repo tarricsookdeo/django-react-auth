@@ -23,12 +23,15 @@ const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item'>
-              <Link className='nav-link' to='/login'>
+              <Link className='nav-link text-dark' to='/login'>
                 Login
               </Link>
             </li>
             <li className='nav-item'>
-              <Link className='nav-link' to='/signup'>
+              <Link
+                className='nav-link btn btn-outline-primary text-primary'
+                to='/signup'
+              >
                 Signup
               </Link>
             </li>
