@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Signup = () => {
   return (
     <div className='container'>
-      <h1>Login</h1>
+      <h1>Signup</h1>
       <form>
         <div className='form-group'>
           <label for='email'>Email Address</label>
@@ -13,7 +13,7 @@ const Login = () => {
             className='form-control'
             id='email'
             aria-describedby='emailHelp'
-            placeholder='Enter a valid and registered email address'
+            placeholder='Enter a valid email address'
             required
           />
         </div>
@@ -26,15 +26,24 @@ const Login = () => {
             placeholder='Password'
           />
         </div>
+        <div className='form-group'>
+          <label for='exampleInputPassword1'>Confirm Password</label>
+          <input
+            type='password'
+            className='form-control'
+            id='exampleInputPassword1'
+            placeholder='Confirm Password'
+          />
+        </div>
         <button type='submit' className='btn btn-primary'>
-          Login
+          Signup
         </button>
-        <Link to='/signup' className='btn btn-link'>
-          Signup instead
+        <Link to='/login' className='btn btn-link'>
+          Login instead
         </Link>
       </form>
     </div>
   );
 };
 
-export default Login;
+export default Signup;
