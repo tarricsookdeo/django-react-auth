@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Login from './views/auth/Login';
 import Signup from './views/auth/Signup';
+import Dashboard from './views/app/Dashboard';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Switch>
           <Route path='/login' component={Login} exact />
           <Route path='/signup' component={Signup} exact />
+          <Route path='/dashboard' component={Dashboard} exact />
         </Switch>
       </Router>
     </div>
