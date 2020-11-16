@@ -7,6 +7,7 @@ const Navbar = () => {
   useEffect(() => {
     // check for auth token in local storage
     // if there is a token, setIsAuth to true
+    setIsAuth(false);
   }, [isAuth]);
 
   if (isAuth) {

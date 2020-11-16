@@ -1,12 +1,17 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
+import Login from './views/auth/Login';
+import Signup from './views/auth/Signup';
 
 const App = () => {
   return (
     <div className='App'>
       <Router>
         <Navbar />
-        <Switch></Switch>
+        <Switch>
+          <Route path='/login' component={Login} exact />
+          <Route path='/signup' component={Signup} exact />
+        </Switch>
       </Router>
     </div>
   );
