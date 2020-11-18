@@ -34,7 +34,7 @@ const Login = () => {
         if (data.key) {
           localStorage.clear();
           localStorage.setItem('token', data.key);
-          setErrors(false);
+          window.location.replace('http://localhost:3000/dashboard');
         } else {
           setEmail('');
           setPassword('');
@@ -46,7 +46,7 @@ const Login = () => {
 
   return (
     <div>
-      {loading === false && <h1>Loign</h1>}
+      {loading === false && <h1>Login</h1>}
       {errors === true && <h2>Cannot log in with provided credentials</h2>}
       {loading === false && (
         <form onSubmit={onSubmit}>
