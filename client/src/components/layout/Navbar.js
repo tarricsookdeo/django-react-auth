@@ -18,6 +18,9 @@ const Navbar = () => {
         <h1>Django React Auth</h1>
         <ul>
           <li>
+            <Link to='/dashboard'>Dashboard</Link>
+          </li>
+          <li>
             <Link to='/logout'>Logout</Link>
           </li>
         </ul>
