@@ -16,5 +16,5 @@ Django, and the Django Rest Framework on the backend, and React on the frontend.
 The project is setup using pipenv, and create-react-app. Follow these steps after
 cloning the repository to get it up and running.
 
-1. Run the following commands in the same directory as manage.py:
+1. Run the following commands in the same directory as manage.py:  
    `pipenv install` and `pipenv install`
