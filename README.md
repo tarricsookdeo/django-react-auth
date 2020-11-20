@@ -16,7 +16,7 @@ Django, and the Django Rest Framework on the backend, and React on the frontend.
 The project is setup using pipenv, and create-react-app. Follow these steps after
 cloning the repository to get it up and running.
 
-1. Run the following commands in the same directory as manage.py:  
+1. Run the following commands in the same directory as `manage.py`:  
    `pipenv install` and `pipenv install --dev`
 
 2. Next create a `local_settings.py` file inside of the `mysite` directory.
@@ -27,3 +27,6 @@ cloning the repository to get it up and running.
 - allowed_hosts - this is an array
 
 Note that `local_settings.py` is in the gitignore.
+
+3. Now run the django migrations. In the same directory as `manage.py` run:  
+   `python manage.py migrate`
