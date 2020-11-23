@@ -1,11 +1,11 @@
 import React, { useState, useEffect, Fragment } from 'react';
 
 const Dashboard = () => {
-  const [userEmail, setUserEmail] = useState();
+  const [userEmail, setUserEmail] = useState('');
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (localStorage.getItem('token') == null) {
+    if (localStorage.getItem('token') === null) {
       window.location.replace('http://localhost:3000/login');
     } else {
       fetch('http://127.0.0.1:8000/api/v1/users/auth/user/', {

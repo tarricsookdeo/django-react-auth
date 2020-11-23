@@ -8,7 +8,7 @@ const Navbar = () => {
     if (localStorage.getItem('token') !== null) {
       setIsAuth(true);
     }
-  }, [isAuth]);
+  }, []);
 
   return (
     <nav>
